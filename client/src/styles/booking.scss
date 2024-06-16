@@ -1,0 +1,98 @@
+.booking {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #eee;
+  //   height: 100vh;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    padding: 10px;
+    div {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      label {
+        letter-spacing: 1px;
+        font-size: 16px;
+      }
+      input {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        outline: 0;
+        &:focus {
+          border: 2px solid black;
+        }
+      }
+      select {
+        padding: 14px;
+        font-size: 17px;
+        outline: 0;
+        border: 0;
+        border: 1.5px solid black;
+        border-radius: 4px;
+        &:focus {
+          border: 1.6px solid blueviolet;
+        }
+      }
+
+      textarea {
+        padding: 14px;
+        font-size: 17px;
+        outline: 0;
+        border: 0;
+        border: 1.5px solid black;
+        border-radius: 4px;
+        &:focus {
+          border: 1.6px solid blueviolet;
+        }
+      }
+    }
+    button {
+      padding: 14px;
+      width: 100%;
+      outline: 0;
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      // background-color:
+      background-color: rgb(139, 157, 222);
+      font-size: 16px;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .booking {
+    height: auto;
+    width: 100%;
+    h1 {
+      font-size: 19px;
+    }
+    form {
+      width: 90%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+.service_details_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.service_details {
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  padding: 1rem;
+
+  .service_details_left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      cursor: pointer;
+      width: 90%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  .service_details_right {
+    text-align: center;
+    h1 {
+      font-size: 2.7rem;
+      margin-top: 10px;
+    }
+  }
+}
+
+.service_facility {
+  padding: 10px;
+  li {
+    padding: 0 40px;
+  }
+}
+
+.service_second_section {
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .service_second_section_left {
+    width: 100%;
+    padding: 10px;
+    img {
+      width: 80%;
+      height: 90vh;
+    }
+  }
+  .service_second_section_right {
+    height: 50vh;
+    width: 100%;
+    h1 {
+      width: 70%;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    .subscribe {
+      display: flex;
+      gap: 10px;
+      margin-top: 1rem;
+      form {
+        width: 100%;
+        input {
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          margin-top: 10px;
+          width: 70%;
+          padding: 15px;
+          margin: 10px 0;
+          font-size: 15px;
+          border: none;
+          border-radius: 5px;
+          outline: 0;
+          &:focus {
+            border: 2px solid black;
+          }
+        }
+
+        button {
+          padding: 15px;
+          background-color: green;
+          color: white;
+          outline: 0;
+          border: 0;
+          cursor: pointer;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .service_details_logo img {
+    width: 90%;
+  }
+
+  .service_details {
+    flex-direction: column;
+    // width: 100%;
+  }
+
+  .service_details_right {
+    width: auto;
+    height: auto;
+  }
+
+  .service_details_right h1 {
+    font-size: 2rem;
+  }
+
+  .service_second_section {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    .service_second_section_left {
+      img {
+        width: 100%;
+      }
+    }
+
+    .service_second_section_right {
+      text-align: center;
+      h1 {
+        width: 100%;
+      }
+      .subscribe {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          padding: 12px;
+          background-color: green;
+          color: white;
+          outline: 0;
+          border: 0;
+          cursor: pointer;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service_details_logo img {
+    width: 80%;
+  }
+
+  .service_details {
+    flex-direction: column;
+  }
+
+  .service_details_left img {
+    height: 50vh;
+  }
+
+  .service_details_right h1 {
+    font-size: 1.2rem;
+  }
+
+  .service_facility li {
+    padding: 0 20px;
+  }
+
+  .service_second_section {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    .service_second_section_left {
+      img {
+        width: 100%;
+      }
+    }
+
+    .service_second_section_right {
+      text-align: center;
+      h1 {
+        width: 100%;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .service_details_logo img {
+    width: 70%;
+  }
+
+  .service_details {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .service_details_left img {
+    height: 30vh;
+  }
+
+  .service_details_right h1 {
+    font-size: 1rem;
+  }
+
+  .service_facility li {
+    padding: 0 10px;
+  }
+
+  .service_second_section {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    .service_second_section_left {
+      img {
+        width: 100%;
+      }
+    }
+
+    .service_second_section_right {
+      text-align: center;
+      h1 {
+        width: 100%;
+      }
+    }
+  }
+}

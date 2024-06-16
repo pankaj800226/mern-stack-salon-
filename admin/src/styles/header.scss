@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  height: 8vh;
+  h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+}

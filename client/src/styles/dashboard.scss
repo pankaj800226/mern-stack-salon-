@@ -1,0 +1,26 @@
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+    div {
+      background-color: rgb(233, 130, 212);
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 1rem;
+      transition: all 0.5s;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-10px);
+      }
+      border-radius: 50%;
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
